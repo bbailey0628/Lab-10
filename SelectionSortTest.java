@@ -30,6 +30,11 @@ testDuplicates();
         Sortedarr[3] = 9;
         Sortedarr[4] = 10;
         
+        SelectionSort temp1 = new SelectionSort();
+        temp1.basicSelectionSort(arr);
+        for (int i = 0; i < 5; i++) {
+        assert arr[i] == Sortedarr[i];
+        }
         /** add tests to check for this unit test **/
     }
     
@@ -48,6 +53,11 @@ testDuplicates();
         Sortedarr[3] = -7;
         Sortedarr[4] = -2;
         
+        SelectionSort temp1 = new SelectionSort();
+        temp1.basicSelectionSort(arr);
+        for (int i = 0; i < 5; i++) {
+        assert arr[i] == Sortedarr[i];
+        }
         /** Test data contains negative values only **/
     }
     
@@ -66,6 +76,11 @@ testDuplicates();
         Sortedarr[3] = 7;
         Sortedarr[4] = 8;
         
+        SelectionSort temp1 = new SelectionSort();
+        temp1.basicSelectionSort(arr);
+        for (int i = 0; i < 5; i++) {
+        assert arr[i] == Sortedarr[i];
+        }
         /** Test data contains with both positive, negative and zeros **/
     }
     
@@ -84,6 +99,11 @@ testDuplicates();
         Sortedarr[3] = 8;
         Sortedarr[4] = 8;
         
+        SelectionSort temp1 = new SelectionSort();
+        temp1.basicSelectionSort(arr);
+        for (int i = 0; i < 5; i++) {
+        assert arr[i] == Sortedarr[i];
+        }
         /** Test data contains duplicates **/
     }
 }
